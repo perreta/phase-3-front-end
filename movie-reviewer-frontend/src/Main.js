@@ -11,7 +11,7 @@ function Main () {
                 <Route path="/">
                     <HomeMoviesContainer />
                 </Route>
-                <Route path="/search">
+                {/* <Route path="/search">
                     <SearchContainer />
                 </Route>
                 <Route path="/users">
@@ -19,7 +19,7 @@ function Main () {
                 </Route>
                 <Route path="*">
                     <h1>404 not found</h1>
-                </Route>
+                </Route> */}
             </Switch>
         </>
     )
