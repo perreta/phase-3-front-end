@@ -18,12 +18,12 @@ export default function RenderMovieCard({title, imdbId, posterImg, year, plot}){
                     {plot}
                 </Card.Description>
                 
-                    <div>
-                        <Button fluid animated='fade'>
-                            <Button.Content visible>Reviews</Button.Content>
-                            <Button.Content hidden>Click to See or Add Reviews</Button.Content>
-                        </Button>
-                    </div>
+                    
+                    <Button fluid animated='fade'>
+                        <Button.Content visible>Reviews</Button.Content>
+                        <Button.Content hidden>Click to See or Add Reviews</Button.Content>
+                    </Button>
+                    
                 
             </Card>
         }>
