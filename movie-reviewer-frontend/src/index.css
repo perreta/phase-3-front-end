@@ -27,3 +27,11 @@ code {
   margin-right: 20%;
   text-align: center;
 }
+
+.plotDescriptions{
+  
+  font-size: 14px;
+  overflow: auto;
+  color: black;
+
+}
