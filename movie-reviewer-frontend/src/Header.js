@@ -1,11 +1,11 @@
 import React from 'react';
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
  function Header () { 
     return (
         <body>
             <nav className="head">
-                <h4 className="title">title</h4>
+                <h4 className="title">Backseat Critic</h4>
             </nav>
             <nav className="options">
                 <ul class="nav">
