@@ -1,14 +1,15 @@
-import ReviewContainer from "./ReviewContainer";
+import ReviewContainer from "./UserReviewContainer";
 import { useState } from "react";
 
 
-function User({ name, favMovie, profPic, dateJoined, reviews}) {
+function User({ user, name, favMovie, profPic, dateJoined}) {
 
   const [ isClicked, setIsClicked ] = useState(false)
   
   function handleClick(){
     setIsClicked(!isClicked)
   }
+  console.log(dateJoined)
   return(
     <div className="container" onClick={handleClick}>
       <div className="profpic">
@@ -16,12 +17,13 @@ function User({ name, favMovie, profPic, dateJoined, reviews}) {
       </div>
       <div className="userInfo">
         <h1>User: {name}</h1>
-        <p className={ !isClicked ? "favoritemovie" : "hidden" }>Favorite Movie: {favMovie}</p>
-        <p className={ !isClicked ? "datejoined" : "hidden" }>Date Joined: {dateJoined}</p>
+        <h2 className={ !isClicked ? "favoritemovie" : "hidden" }>Favorite Movie: {favMovie}</h2>
+        <h2 className={ !isClicked ? "datejoined" : "hidden" }>Date Joined: {user.format_date}</h2>
       </div>
       <div className={ isClicked ? "reviews" : "hidden"}>
-        <ReviewContainer reviews={reviews}/>
+        <ReviewContainer user={user}/>
       </div>
+      <hr/>
     </div>
   )
 }
