@@ -52,7 +52,14 @@ export default function RenderSearchResults({searchObject}){
     if(movieSearch.length != 0){
         movieCards = movieSearch.map(movie => {
             if(filterMovies(movie, searchObject)){
-                return <RenderMovieCard key={uuidv4()} title={movie.Title} imdbId={movie.imdbID} posterImg = {movie.Poster} year = {movie.Year} plot={movie.Plot}/>
+                let newRating = 0;
+                if(movie.Ratings[0] != null){
+                    newRating = parseFloat(movie.Ratings[0].Value.replace('/10', ''))
+                }else{
+                    newRating = 0;
+                }
+                
+                return <RenderMovieCard key={uuidv4()} title={movie.Title} imdbId={movie.imdbID} posterImg = {movie.Poster} year = {movie.Year} plot={movie.Plot} rating={newRating}/>
             }
         })
     }

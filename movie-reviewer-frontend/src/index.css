@@ -35,3 +35,32 @@ code {
   color: black;
 
 }
+
+.reviewPageInfo{
+  padding: 10px;
+  justify-content: center;
+}
+
+.movieInfo{
+  color: grey;
+  font-weight: bold;
+}
+
+.reviewPageContainer{
+  text-align: 'center';
+}
+
+.reviewPageContainer2{
+  display: flex;
+  justify-content: center;
+}
+
+.reviewCardsClass{
+  display: flex;
+  justify-content: center;
+}
+
+.userRatingClass{
+  display: flex;
+  flex-direction: column;
+}
