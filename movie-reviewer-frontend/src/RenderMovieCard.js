@@ -19,7 +19,7 @@ export default function RenderMovieCard({title, imdbId, posterImg, year, plot, r
                     {plot}
                 </Card.Description>
                 
-                    <div className='button'>
+                    <div className='makeButtonToPopulateOnBottom'>
                         <Button fluid onClick={handleClick}>
                             Click to Create Review
                         </Button>

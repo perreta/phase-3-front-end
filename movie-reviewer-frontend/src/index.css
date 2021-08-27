@@ -64,9 +64,9 @@ code {
   display: flex;
   flex-direction: column;
 }
-.button{
+.makeButtonToPopulateOnBottom{
   margin-top: auto;
-
+}
 .hidden {
   display: none;
 }
