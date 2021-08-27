@@ -1,7 +1,5 @@
 import ReviewContainer from "./UserReviewContainer";
 import { useState } from "react";
-
-
 function User({ user, name, favMovie, profPic, dateJoined}) {
 
   const [ isClicked, setIsClicked ] = useState(false)
