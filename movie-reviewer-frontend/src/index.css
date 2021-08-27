@@ -64,3 +64,29 @@ code {
   display: flex;
   flex-direction: column;
 }
+
+.hidden {
+  display: none;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.good {
+  border-color: rgb(0, 218, 0);
+  border-style: solid;
+  border-width: 3px;
+  background-color: green;
+  color: white;
+}
+
+.bad {
+  border-color:red;
+  border-style: solid;
+  border-width: 3px;
+  background-color: rgb(163, 0, 0);
+  color: white;
+}

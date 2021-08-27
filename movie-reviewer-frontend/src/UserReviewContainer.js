@@ -12,7 +12,7 @@ function UserReviewContainer({ user }) {
     }, [])
    
     const review = reviewArray.map(review => {
-        return <UserReview key={review.id} title={review.title} poster={review.poster} rating={review.rating} content={review.review}/>
+        return <UserReview key={review.id} title={review.title} user_rating={review.user_rating} poster={review.poster} recommend={review.recommend} rating={review.rating} content={review.review}/>
     })
 
     return (
