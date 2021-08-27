@@ -86,6 +86,7 @@ export default function Search(){
                 />
                 <Button type='submit' onClick={handleButtonSearch}>Search</Button>
             </form>
+            <br/>
             <RenderSearchResults searchObject = {searchObject}/>
             
         </div>
