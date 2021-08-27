@@ -64,6 +64,8 @@ code {
   display: flex;
   flex-direction: column;
 }
+.button{
+  margin-top: auto;
 
 .hidden {
   display: none;

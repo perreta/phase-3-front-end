@@ -12,17 +12,18 @@ export default function RenderMovieCard({title, imdbId, posterImg, year, plot, r
     
     return(
         <Popup trigger = {
-            <Card>
+            <Card className='fixButton'>
                 <Image src={posterImg} wrapped ui={false}/>
                 <Card.Header>{`${title} (${year})`}</Card.Header>
                 <Card.Description className = 'plotDescriptions'>
                     {plot}
                 </Card.Description>
                 
-                    
-                    <Button fluid onClick={handleClick}>
-                        Click to Create Review
-                    </Button>
+                    <div className='button'>
+                        <Button fluid onClick={handleClick}>
+                            Click to Create Review
+                        </Button>
+                    </div>
                     
                 
             </Card>
